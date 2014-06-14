@@ -326,50 +326,54 @@
     </pre>
   </div></section>
 
-<section class="slide"><div>
-  <pre>
-    <code>app.controller('IndexController',</code>
-    <code>  function($scope, MoviesService){</code>
-    <code>  <mark>$scope.movies = [];</mark></code>
-    <code>  function all(){</code>
-    <code>    MoviesService.query(function(response){</code>
-    <code>      $scope.movies = response;</code>
-    <code>    });</code>
-    <code>  }</code>
-    <code>  all();</code>
-    <code>});</code>
-  </pre>
-</div></section>
+  <section class="slide"><div>
+    <pre>
+      <code>app.controller('IndexController',</code>
+      <code>  function($scope, MoviesService){</code>
+      <code>  <mark>$scope.movies = [];</mark></code>
+      <code>  function all(){</code>
+      <code>    MoviesService.query(function(response){</code>
+      <code>      $scope.movies = response;</code>
+      <code>    });</code>
+      <code>  }</code>
+      <code>  all();</code>
+      <code>});</code>
+    </pre>
+  </div></section>
 
-<section class="slide"><div>
-  <pre>
-    <code>app.controller('IndexController',</code>
-    <code>  function($scope, MoviesService){</code>
-    <code>  $scope.movies = [];</code>
-    <code>  <mark>function all(){</mark></code>
-    <code>    <mark>MoviesService.query(function(response){</mark></code>
-    <code>      <mark>$scope.movies = response;</mark></code>
-    <code>    <mark>});</mark></code>
-    <code>  <mark>}</mark></code>
-    <code>  all();</code>
-    <code>});</code>
-  </pre>
-</div></section>
+  <section class="slide"><div>
+    <pre>
+      <code>app.controller('IndexController',</code>
+      <code>  function($scope, MoviesService){</code>
+      <code>  $scope.movies = [];</code>
+      <code>  <mark>function all(){</mark></code>
+      <code>    <mark>MoviesService.query(function(response){</mark></code>
+      <code>      <mark>$scope.movies = response;</mark></code>
+      <code>    <mark>});</mark></code>
+      <code>  <mark>}</mark></code>
+      <code>  all();</code>
+      <code>});</code>
+    </pre>
+  </div></section>
 
-<section class="slide"><div>
-  <pre>
-    <code>app.controller('IndexController',</code>
-    <code>  function($scope, MoviesService){</code>
-    <code>  $scope.movies = [];</code>
-    <code>  function all(){</code>
-    <code>    MoviesService.query(function(response){</code>
-    <code>      $scope.movies = response;</code>
-    <code>    });</code>
-    <code>  }</code>
-    <code>  <mark>all();</mark></code>
-    <code>});</code>
-  </pre>
-</div></section>
+  <section class="slide"><div>
+    <img src="images/response.png" alt="" class="place" style="height: 95%;"/>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>app.controller('IndexController',</code>
+      <code>  function($scope, MoviesService){</code>
+      <code>  $scope.movies = [];</code>
+      <code>  function all(){</code>
+      <code>    MoviesService.query(function(response){</code>
+      <code>      $scope.movies = response;</code>
+      <code>    });</code>
+      <code>  }</code>
+      <code>  <mark>all();</mark></code>
+      <code>});</code>
+    </pre>
+  </div></section>
 
   <section class="slide shout"><div>
     <h2><a href="example/index.html" target="blank">THE CODE, PLEASE.</a></h2>
