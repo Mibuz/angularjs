@@ -11,38 +11,36 @@
 
   <body ng-controller="HelloController">
 
+    <a href="01.html">Exemplo 1 - </a>
+    <a href="02.html">Exemplo 2</a>
+
+
     <!-- JQuery Example -->
-    <div style="display:block; overflow: auto;">
-      <h2>JQuery toogle</h2>
-      <a href="#" class="toggle">Click me</a>
-      <div class="box toggle">
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-        </ul>
-      </div>
+    <div>
+      <h2>JQuery increment</h2>
+
+      <a href="#" class="increment">Increment</a>
+      <h2>0</h2>
     </div>
     <!-- JQuery Example -->
     <hr>
 
     <!-- AngularJS Example -->
     <div>
-      <h2>AngularJS toggle</h2>
-      <a href="#" ng-click="toggle = !toggle">Toggle!</a>
-      <div ng-show="toggle" class="box">
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-        </ul>
-      </div>
+      <h2>AngularJS increment</h2>
+      <a href="#" ng-click="increment()">Increment</a>
+      <h2>{{ value }}</h2>
     </div>
     <!-- AngularJS Example -->
 
     <!-- JQuery -->
     <script src="js/vendor/jquery-2.1.1.js"></script>
     <script charset="utf-8">
-      $('a.toggle').on('click', function(event){
-        $(event.target).next('.toggle').toggle();
+      $('a.increment').on('click', function(event){
+        var el = $(event.target).next('h2');
+        var value = el.text();
+        value++;
+        el.text(value);
       });
     </script>
 
