@@ -19,7 +19,7 @@
   </header>
 
   <section class="slide shout"><div>
-    <img src="images/AngularJS-large.png" alt=""  class="place" />
+    <img src="images/AngularJS-large.png" alt="" class="place" />
   </div></section>
 
   <section class="slide"><div>
@@ -33,10 +33,14 @@
           <li>@bruno2fernando - Twitter</li>
           <li>@3runoDesign - Github</li>
           <li>bruno@mibuz.com.br</li>
-          <li style="line-height: 24px;"><span style="font-size: 16px; line-heigth: 16px">HTML5 (Slim, Jade), CSS3 (Sass), Javascript (Coffee), Grunt, Bower, Design</span></li>
+          <li style="line-height: 24px;"><span style="font-size: 16px; line-heigth: 16px">HTML5 (Slim, Jade)<br>CSS3 (Sass)<br>Javascript (Coffee)<br>Grunt, Bower, Design</span></li>
         </ul>
       </div>
     </div>
+  </div></section>
+
+  <section class="slide" style="background: #2b2b2b"><div>
+    <img src="images/slim.png" alt="" class="place" />
   </div></section>
 
   <section class="slide"><div>
@@ -49,7 +53,7 @@
         <ul style="list-style: none">
           <li>@franciscomxs - Twitter/Github</li>
           <li>francisco@mibuz.com.br</li>
-          <li style="line-height: 24px;"><span style="font-size: 16px;">Ruby, Ruby on Rails, Javascript, Node, HTML5, CSS3</span></li>
+          <li style="line-height: 24px;"><span style="font-size: 16px;">Web (Ruby on Rails)<br>iOS (Objective-C/ RubyMotion)<br>Android, (Java, Ruboto)<br>Phonegap, AngularJS, Node</span></li>
         </ul>
       </div>
     </div>
@@ -67,34 +71,41 @@
     </a>
   </div></section>
 
-  <section class="slide"><div>
-    <h2>Cenário</h2>
-
-    <ul>
-      <li>Server-side
-        <ul>
-          <li>Camadas = <strong>manutenção</strong> + <strong>reutilização</strong> + <strong>legibilidade</strong></li>
-          <li>Testável</li>
-        </ul>
-      </li>
-      <li>Client-side
-        <ul>
-          <li>?</li>
-        </ul>
-      </li>
-    </ul>
+  <section class="slide shout"><div>
+    <h2>Blá blá blá!</h2>
   </div></section>
 
   <section class="slide"><div>
-    <h2>Client-side framework e bibliotecas</h2>
+    <div style="width: 49%; float:left">
+      <h2>Server-side</h2>
+      <ul>
+        <li>Camadas (MVC*)</li>
+        <li>Manutenção</li>
+        <li>Reutilização</li>
+        <li>Legibilidade</li>
+        <li>Código testável</li>
+      </ul>
+    </div>
+
+    <div style="width: 49%; float:left">
+      <h2>Client-side</h2>
+      <ul>
+        <li>?</li>
+      </ul>
+      </li>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Framework e bibliotecas</h2>
 
     <ul>
-      <li>BackboneJS - Lib</li>
-      <li>CanJS - Lib</li>
-      <li>Knockout - Lib</li>
-      <li>Angular - Framework</li>
-      <li>EmberJS - Framework</li>
-      <li>Meteor - Framework</li>
+      <li>BackboneJS</li>
+      <li>CanJS</li>
+      <li>Knockout</li>
+      <li>EmberJS</li>
+      <li>Meteor</li>
+      <li>AngularJS</li>
     </ul>
 
   </div></section>
@@ -108,9 +119,32 @@
 
     <ul>
       <li>Projeto Google</li>
-      <li>Lançado em 2009</li>
+      <li>Público em 2009</li>
+      <li>SPA - Single Page Applications (não restrito)</li>
+      <li>Componentes visuais reutilizáveis</li>
+      <li>Diretivas: Ampliação do vocabulário do navegador</li>
+      <li>Two-way data-binding
+      <li>Angular expressions: {{ for movie in movies | filter: filter }}</li>
       <li>MVC - MVVM</li>
     </ul>
+
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>JQuery</h2>
+
+    <pre>
+      <code>&lt;<mark>a</mark> href="#" <mark>class="toggler"</mark> &gt;Toggle nav&lt;/a&gt;</code>
+      <code>&lt;ul <mark class="important">class="toggle"</mark>&gt;</code>
+      <code>  &lt;li>item 1&lt;/li&gt;</code>
+      <code>&lt;/ul&gt;</code>
+    </pre>
+
+    <pre>
+      <code>$(<mark>'a.toggler'</mark>).on('click', function(e)) {</code>
+      <code>  $(event.target).next(<mark class="important">'.toggle'</mark>).toggle();</code>
+      <code>}</code>
+    </pre>
 
   </div></section>
 
@@ -119,38 +153,41 @@
 
     <pre>
       <code>&lt;a href="" <mark>ng-click="toggle = !toggle"</mark>&gt;Toggle nav&lt;/a&gt;</code>
-      <code>&lt;ul <mark class="important">ng-show="toggle"</mark>&gt;</code>
-      <code>  &lt;li>Link 1&lt;/li&gt;</code>
-      <code>  &lt;li>Link 2&lt;/li&gt;</code>
-      <code>  &lt;li>Link 3&lt;/li&gt;</code>
+      <code>&lt;ul <mark>ng-show="toggle"</mark>&gt;</code>
+      <code>  &lt;li>item 1&lt;/li&gt;</code>
       <code>&lt;/ul&gt;</code>
     </pre>
 
   </div></section>
 
-  <section class="slide"><div>
-    <h2>Angular JS</h2>
 
-    <ul>
-      <li>Programação declarativa: templates</li>
-      <li>Diretiva ng-app (html ou outro elemento)</li>
-      <li>{{ Angular expression | filter: filter }} (expressions não resolvidas são ignoradas)</li>
-    </ul>
-
+  <section class="slide shout"><div>
+    <h2>Getting started</h2>
   </div></section>
 
   <section class="slide"><div>
-    <h2>Getting started</h2>
+    <pre>
+      <code>&lt;html lang="pt-BR"&gt;</code>
+      <code>&lt;head&gt;</code>
+      <code>    &lt;title&gt;My App&lt;/title&gt;</code>
+      <code>    &lt;meta charset="UTF-8"&gt;</code>
+      <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+      <code>    &lt;script src="jquery.js"&gt;&lt;/script&gt;</code>
+      <code>&lt;/head&gt;</code>
+    </pre>
+  </div></section>
 
-    <ul>
-      <li>Importar o arquivo <mark>angular.min.js</mark></li>
-      <li>Two-ways data-binding (alteração no model reflete na view e vice versa)</li>
-      <li>Componentes visuais reutilizáveis</li>
-      <li>Diretivas: Ampliação do vocabulário do navegador (tags próprias através de diretivas)</li>
-      <li>SPA - Single Page Applications (não restrito)</li>
-      <li>Rotas trocam o "miolo"</li>
-    </ul>
-
+  <section class="slide"><div>
+    <pre>
+      <code>&lt;html lang="pt-BR" <mark>ng-app</mark>&gt;</code>
+      <code>&lt;head&gt;</code>
+      <code>    &lt;title&gt;My App&lt;/title&gt;</code>
+      <code>    &lt;meta charset="UTF-8"&gt;</code>
+      <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+      <code>    &lt;script src="jquery.js"&gt;&lt;/script&gt;</code>
+      <code>    <mark>&lt;script src="angular.js"&gt;&lt;/script&gt;</mark></code>
+      <code>&lt;/head&gt;</code>
+    </pre>
   </div></section>
 
   <section class="slide"><div>
@@ -158,40 +195,210 @@
 
     <pre>
       <code>function HelloController($scope){</code>
-      <code>  $scope.name = 'Francisco';</code>
+      <code>  <mark>$scope.title</mark> = 'Basic AngularJS demo';</code>
       <code>}</code>
     </pre>
 
     <pre>
-      <code>ng-controller="HelloController"</code>
+      <code>&lt;div ng-controller="HelloController"&gt;</code>
+      <code>  &lt;h2&gt;<mark>{{ title }}&lt;</mark>/h2&gt;</code>
+      <code>&lt;/div&gt;</code>
     </pre>
 
   </div></section>
 
   <section class="slide"><div>
     <h2 style="font-size: 79px;">
-      <small style="font-size: 48px;display: block;">Talk is cheap...</small> SHOW ME THE CODE!
+      <small style="font-size: 48px;display: block;">Talk is cheap...</small>SHOW ME THE CODE!
     </h2>
 
     <img src="images/talk.gif" alt=""  class="" />
   </div></section>
 
   <section class="slide shout"><div>
-    <h2>
-      <img src="images/trabalho.png" alt=""  class="place" />
-    </h2>
+    <h2>Só isso?</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <img src="images/jonsnow.gif" alt=""  class="place" />
   </div></section>
 
   <section class="slide shout"><div>
-    <h2>
-      Case
-    </h2>
+    <h2>Angular App</h2>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <h2>Routes</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code><mark class="comment">//main.js</mark></code>
+      <code><mark>var app = angular.module('MyApp', ['ngRoute']);</mark></code>
+      <code>app.config(function($routeProvider){</code>
+      <code>  $routeProvider.when('/',{</code>
+      <code>    templateUrl: 'partials/pages/home.tpl.html',</code>
+      <code>    controller: 'HomeController'</code>
+      <code>  })</code>
+      <code>  $routeProvider.otherwise({ redirectTo: '/' })</code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code><mark class="comment">//main.js</mark></code>
+      <code>var app = angular.module('CineApp', ['ngRoute', 'ngResource', 'services']);</code>
+      <code><mark>app.config(function($routeProvider){</mark></code>
+      <code>  $routeProvider.when('/',{</code>
+      <code>    templateUrl: 'partials/pages/home.tpl.html',</code>
+      <code>    controller: 'HomeController'</code>
+      <code>  })</code>
+      <code>  $routeProvider.otherwise({ redirectTo: '/' })</code>
+      <code><mark>});</mark></code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code><mark class="comment">//main.js</mark></code>
+      <code>var app = angular.module('CineApp', ['ngRoute', 'ngResource', 'services']);</code>
+      <code>app.config(function($routeProvider){</code>
+      <code>  <mark>$routeProvider.when('/',{</mark></code>
+      <code>    <mark>templateUrl: 'partials/pages/home.tpl.html',</mark></code>
+      <code>    <mark>controller: 'HomeController'</mark></code>
+      <code>  <mark>})</mark></code>
+      <code>  $routeProvider.otherwise({ redirectTo: '/' })</code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <h2>Services</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code><mark>angular.module('services', ['ngResource'])</mark></code>
+      <code>  .factory('MoviesService', function($resource){</code>
+      <code>    return $resource('http://API_URL/api/v1/movies/:id');</code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>angular.module('services', ['ngResource'])</code>
+      <code>  <mark>.factory('MoviesService', function($resource){</mark></code>
+      <code>    return $resource('http://API_URL/api/v1/movies/:id');</code>
+      <code><mark>});</mark></code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>angular.module('services', ['ngResource'])</code>
+      <code>  .factory('MoviesService', function($resource){</code>
+      <code>    <mark>return $resource('http://API_URL/api/v1/movies/:id');</mark></code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <h2>Controller</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code><mark>app.controller('IndexController',</mark></code>
+      <code><mark>  function($scope, MoviesService){</mark></code>
+      <code>  $scope.movies = [];</code>
+      <code>  function all(){</code>
+      <code>    MoviesService.query(function(response){</code>
+      <code>      $scope.movies = response;</code>
+      <code>    });</code>
+      <code>  }</code>
+      <code>  all();</code>
+      <code><mark>});</mark></code>
+    </pre>
+  </div></section>
+
+<section class="slide"><div>
+  <pre>
+    <code>app.controller('IndexController',</code>
+    <code>  function($scope, MoviesService){</code>
+    <code>  <mark>$scope.movies = [];</mark></code>
+    <code>  function all(){</code>
+    <code>    MoviesService.query(function(response){</code>
+    <code>      $scope.movies = response;</code>
+    <code>    });</code>
+    <code>  }</code>
+    <code>  all();</code>
+    <code>});</code>
+  </pre>
+</div></section>
+
+<section class="slide"><div>
+  <pre>
+    <code>app.controller('IndexController',</code>
+    <code>  function($scope, MoviesService){</code>
+    <code>  $scope.movies = [];</code>
+    <code>  <mark>function all(){</mark></code>
+    <code>    <mark>MoviesService.query(function(response){</mark></code>
+    <code>      <mark>$scope.movies = response;</mark></code>
+    <code>    <mark>});</mark></code>
+    <code>  <mark>}</mark></code>
+    <code>  all();</code>
+    <code>});</code>
+  </pre>
+</div></section>
+
+<section class="slide"><div>
+  <pre>
+    <code>app.controller('IndexController',</code>
+    <code>  function($scope, MoviesService){</code>
+    <code>  $scope.movies = [];</code>
+    <code>  function all(){</code>
+    <code>    MoviesService.query(function(response){</code>
+    <code>      $scope.movies = response;</code>
+    <code>    });</code>
+    <code>  }</code>
+    <code>  <mark>all();</mark></code>
+    <code>});</code>
+  </pre>
+</div></section>
+
+  <section class="slide shout"><div>
+    <h2>Só isso.</h2>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <img src="images/meme.png" alt="" class="place" width="80%"/>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <h2>Mercado</h2>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <img src="images/trabalho.png" alt=""  class="place" />
+  </div></section>
+
+  <section class="slide shout"><div>
+    <h2>Case</h2>
   </div></section>
 
   <section class="slide shout"><div>
     <h2>
       <img src="images/espn-case-1.png" width="1330px" alt=""  class="place" />
     </h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Obrigado.</h2>
+    <ul>
+      <li>https://github.com/Mibuz/angularjs</li>
+    </ul>
   </div></section>
   <!--p class="badge"><a href="https://github.com/Mibuz/angularjs">Fork me on Github</a></p-->
   <!--
