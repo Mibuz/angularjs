@@ -4,17 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimal-ui">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css" media="all" charset="utf-8">
     <title>Basic example</title>
-    <style media="screen">
-      body{ padding: 20px; }
-      .box{
-        background: #dddddd;
-        margin: 20px 0;
-        padding: 10px;
-        width: 100px;
-      }
-      .left{ float: left; }
-    </style>
   </head>
 
   <body ng-controller="HelloController">
@@ -37,6 +29,11 @@
           <li>Item 4</li>
         </ul>
       </div>
+
+      <hr>
+
+      <a href="#" class="increment">Increment</a>
+      <h2>0</h2>
     </div>
     <!-- JQuery Example -->
     <hr>
@@ -64,6 +61,13 @@
     <script charset="utf-8">
       $('a.toggle').on('click', function(event){
         $(event.target).next('.toggle').toggle();
+      });
+
+      $('a.increment').on('click', function(event){
+        var el = $(event.target).next('h2');
+        var value = el.text();
+        value++;
+        el.text(value);
       });
     </script>
 
