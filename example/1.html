@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head lang="pt-BR">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css" media="all" charset="utf-8">
+    <title>Basic example</title>
+  </head>
+
+  <body ng-controller="HelloController">
+
+    <!-- JQuery Example -->
+    <div style="display:block; overflow: auto;">
+      <h2>JQuery toogle</h2>
+      <a href="#" class="toggle">Click me</a>
+      <div class="box toggle">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+      </div>
+    </div>
+    <!-- JQuery Example -->
+    <hr>
+
+    <!-- AngularJS Example -->
+    <div>
+      <h2>AngularJS toggle</h2>
+      <a href="#" ng-click="toggle = !toggle">Toggle!</a>
+      <div ng-show="toggle" class="box">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+      </div>
+    </div>
+    <!-- AngularJS Example -->
+
+    <!-- JQuery -->
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script charset="utf-8">
+      $('a.toggle').on('click', function(event){
+        $(event.target).next('.toggle').toggle();
+      });
+    </script>
+
+    <!-- AngularJS -->
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/controllers/HelloController.js"></script>
+  </body>
+</html>

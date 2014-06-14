@@ -12,25 +12,8 @@
   <body ng-controller="HelloController">
 
     <!-- JQuery Example -->
-    <div style="display:block; overflow: auto;">
-      <h2>JQuery toogle</h2>
-      <div class="box">
-        <a href="#" class="toggle">Click me</a>
-        <ul class="toggle">
-          <li>Item 1</li>
-          <li>Item 2</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <a href="#" class="toggle">Click me</a>
-        <ul class="toggle">
-          <li>Item 3</li>
-          <li>Item 4</li>
-        </ul>
-      </div>
-
-      <hr>
+    <div>
+      <h2>JQuery increment</h2>
 
       <a href="#" class="increment">Increment</a>
       <h2>0</h2>
@@ -40,19 +23,9 @@
 
     <!-- AngularJS Example -->
     <div>
-      <h2>Title: {{ title }}</h2>
-      <hr>
-
-      <h2>Value: {{ value }}</h2>
+      <h2>AngularJS increment</h2>
       <a href="#" ng-click="increment()">Increment</a>
-
-      <hr>
-
-      <a href="#" ng-click="toggle = !toggle">Toggle!</a>
-      <div ng-show="toggle" class="box">
-      </div>
-
-      <hr>
+      <h2>{{ value }}</h2>
     </div>
     <!-- AngularJS Example -->
 
